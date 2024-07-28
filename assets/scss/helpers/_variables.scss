@@ -1,0 +1,24 @@
+// colors
+$color-primary: #AA0601;
+$color-secondary: #650300;
+$color-tertiary: #FBF2F2;
+$color-black: #000000;
+$color-darkGray: #707070;
+$color-lightGray: #DEE2E6;
+
+// font-size
+$fs-base: 1rem;          // 16px
+$fs-1: $fs-base * 2;     // 32px
+$fs-2: $fs-base * 1.75;  // 28px
+$fs-3: $fs-base * 1.5;   // 24px
+$fs-4: $fs-base * 1.25;  // 20px
+$fs-5: $fs-base * 1;     // 16px
+$fs-6: $fs-base * 0.875; // 14px
+
+$fs-h1: $fs-base * 4;    // 64px
+$fs-h2: $fs-base * 3;    // 48px
+$fs-h3: $fs-base * 2.25; // 36px
+$fs-h4: $fs-base * 2;    // 32px
+$fs-h5: $fs-base * 1.5;  // 24px
+$fs-h6: $fs-base * 1.25; // 20px
+
