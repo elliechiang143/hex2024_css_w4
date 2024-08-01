@@ -8,7 +8,6 @@
 }
 
 .btn{
-    background-color: $color-primary;
     color: white;
     padding: 6px 12px;
     cursor: pointer;
@@ -20,8 +19,18 @@
     padding: 16px 24px;
 }
 
-.btn:hover{
-    background-color: $color-secondary;
+.btn-primary{
+    background-color: $color-primary;
+    &:hover{
+        background-color: $color-secondary;
+    }
+}
+
+.btn-black{
+    background-color: $color-black;
+    &:hover{
+        background-color: $color-primary;
+    }
 }
 
 .banner{
@@ -147,12 +156,6 @@
     }
 }
 
-@media (max-width: 992px){
-    // .recommend-cards{
-    //     gap: 24px;
-    // }
-}
-
 .recommend-card{
     height: 100%;
     border-radius: 4px;
@@ -210,11 +213,41 @@
 
 // 門市據點
 
-.pages-header{
+.pages-wrapper{
     padding-top: 96px;
+    padding-bottom: 80px;
 }
 
 .pages-title{
     border-left: 8px solid $color-primary;
     padding-left: 16px;
+}
+
+.select-row {
+    gap: 16px;
+    select {
+        width: 304px;
+        border: 1px solid #CED4DA;
+        padding: 6px 12px;
+        appearance: none;
+        background-image: linear-gradient(45deg, transparent 50%, $color-black 50%), linear-gradient(135deg, $color-black 50%, transparent 50%);
+        background-position: calc(100% - 20px) 12px, calc(100% - 15px) 12px;
+        background-size: 5px 5px, 5px 5px;
+        background-repeat: no-repeat;
+    }
+}
+
+.store-list-row{
+    gap: 48px 0;
+}
+.store-name{
+    border: 1px solid rgba($color-black, 0.2);
+    padding: 8px 24px;
+}
+.store-info{
+    border: 1px solid rgba($color-black, 0.2);
+    padding: 16px 26px;
+}
+.store-info-icon{
+    padding-top: 4px;
 }
