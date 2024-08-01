@@ -1,0 +1,41 @@
+.nav-logo{
+  width: 80px;
+}
+
+.nav-links{
+  gap: 64px;
+  a{
+      display: block;
+      padding-top: 12px;
+      padding-bottom: 12px;
+  }
+}
+
+.nav-row{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px){
+  .nav-logo{
+      padding-top: 16px;
+      padding-bottom: 16px;
+  }
+  .nav-row{
+      height: auto;
+      display: block;
+  }
+  .nav-links{
+      gap: 0;
+      flex-wrap: wrap;
+      margin-right: -12px;
+      margin-left: -12px;
+  }
+  .nav-links li{
+      border: 1px solid white;
+      text-align: center;
+      width: 50%;
+  }
+}

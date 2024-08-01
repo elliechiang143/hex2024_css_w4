@@ -1,7 +1,10 @@
 @import './helpers/variables';
+@import './helpers/mixin';
 
 @import './base/reset';
 @import './base/base';
 
+@import './layout/footer';
+@import './layout/nav';
 @import './layout/layout';
 

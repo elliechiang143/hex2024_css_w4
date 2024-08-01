@@ -1,4 +1,108 @@
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  padding-top: 48px;
+  padding-bottom: 32px;
+}
+
+.footer-nav{
+  gap: 48px;
+  margin-bottom: 36px;
+}
+
+.footer-nav li a{
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.footer-sns{
+  gap: 32px;
+}
+
+.footer-sns a{
+  width: 48px;
+  height: 48px;
+  transition: all 0.2s;
+}
+
+.footer-sns a:hover{
+  opacity: 0.7;
+}
+
+.footer-contact{
+  font-size: 36px;
+}
+
+.footer-contact li a{
+  align-items: center;
+}
+
+.footer-contact-icon{
+  font-size: 36px;
+  margin-right: 20px;
+}
+
+.footer hr{
+  margin-top: 32px;
+  margin-bottom: 32px;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.footer-bottom a{
+  margin-left: 48px;
+}
+
+@media (max-width: 992px) {
+  .footer-nav{
+      margin-bottom: 32px;
+  }
+  .footer-sns{
+      gap: 16px;
+  }
+  .footer-sns a{
+      width: 40px;
+      height: 40px;
+  }
+}
+
+//平板版面655px時就會破版
+@media (max-width: 690px) {
+  .footer-nav{
+      display: none;
+  }
+  .footer-bottom{
+      flex-direction: column;
+      gap: 8px;
+  }
+  .footer-bottom a{
+      margin-left: 0;
+  }
+  .footer-contact{
+      font-size: 24px;
+  }
+  .footer-contact-icon{
+      font-size: 24px;
+      margin-right: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer{
+      padding-top: 24px;
+      padding-bottom: 24px;
+  }
+  .footer-sns{
+      gap: 8px;
+  }
+  .footer-sns a{
+      width: 24px;
+      height: 24px;
+  }
+  .footer-contact{
+      font-size: 16px;
+  }
+  .footer-contact-icon{
+      font-size: 16px;
+      margin-right: 10px;
+  }
 }
