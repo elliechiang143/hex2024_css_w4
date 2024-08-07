@@ -148,16 +148,28 @@ body{
     padding-right: 12px;
 }
 
-.col-6{
-    width: 50%;
-}
-
 .col-3{
     width: 25%;
 }
 
 .col-4{
     width: 33.33333333%;
+}
+
+.col-5{
+    width: 41.66666666%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.col-7{
+    width: 58.33333333%;
+}
+
+.col-8{
+    width: 66.66666666%;
 }
 
 .mr-a{
@@ -193,6 +205,9 @@ body{
     }
     .col-lg-10{
         width: 83.33333333%;
+    }
+    .col-lg-12{
+        width: 100%;
     }
     .mb-lg-24{
         margin-bottom: 24px;

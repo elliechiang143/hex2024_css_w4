@@ -226,6 +226,7 @@
 .select-row {
     gap: 16px;
     select {
+        font-size: 18px;
         width: 304px;
         border: 1px solid #CED4DA;
         padding: 6px 12px;
@@ -250,4 +251,46 @@
 }
 .store-info-icon{
     padding-top: 4px;
+}
+
+.store-map .map{
+    height: 100%;
+}
+
+@media (max-width: 992px){
+    .store-map{
+        .store-card{
+            display: flex;
+            img{
+                width: 50%;
+                margin-right: 24px;
+                object-fit: cover;
+            }
+        }
+        .map{
+            height: 414px;
+        }
+    }
+    .store-map-row{
+        gap: 24px;
+    }
+}
+
+@media (max-width: 576px){
+    .selectStore-label{
+        flex: 0 0 80px;
+    }
+    .store-map{
+        .store-card{
+            display: block;
+            img{
+                width: 100%;
+                margin-right: 0;
+                object-fit: none;
+            }
+        }
+        .map{
+            height: 208px;
+        }
+    }
 }
